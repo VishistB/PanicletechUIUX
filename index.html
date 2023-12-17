@@ -1,51 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="herowrapper">
-        <!-- Invisiblenav elem-->
-        <div class="topnav">
-            <!-- left spaced thingies -->
-            <div>
-            <div class="navboxwhite">
-                <img src="assets/LogoMark.png">
-            </div>
-            </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="herowrapper">
+            <!-- Invisiblenav elem-->
+            <div class="topnav">
+                <!-- left spaced thingies -->
+                <div>
+                    <div class="navboxwhite">
+                        <img src="assets/LogoMark.png" />
+                    </div>
+                </div>
 
-            <!-- right spaced thingies -->
-            <div class="navflexright">
-                <div class="navboxwhite">
-                    <img src="assets/Monotoneadd.png">
+                <!-- right spaced thingies -->
+                <div class="navflexright">
+                    <div class="navboxwhite">
+                        <img src="assets/Monotoneadd.png" />
+                    </div>
+                    <div class="navboxwhite">
+                        <img src="assets/Monotonemail.png" />
+                    </div>
+                    <div class="navboxmenu">
+                        <h3 id="menuboxheader">Main Menu</h3>
+                        <img src="assets/MENU.png" />
+                    </div>
                 </div>
-                <div class="navboxwhite">
-                    <img src="assets/Monotonemail.png">
+            </div>
+            <div class="assetsframe">
+                <div id="herotextanddownload">
+                    <h1 id="heroheader">
+                        Personalized AI Wellness & Healthcare
+                    </h1>
+                    <p id="heropara">
+                        asklepios provides personalized healthcare AI analytics
+                        to help you empower your health. <br /><br />
+                        Trusted by over 400,000 users and counting.
+                    </p>
+                    <button id="downloadbtn">
+                        DOWNLOAD
+                        <img id="downloadicon" src="assets/Download.png" />
+                    </button>
                 </div>
-                <div class="navboxmenu">
-                    <h3 id="menuboxheader">Main Menu</h3>
-                    <img src="assets/MENU.png">
+                <img id="herobgart" src="./assets/DAsset.png" />
+                <img id="iphone" src="assets/iPhone.png" />
+                <img
+                    class="herometrics"
+                    id="bloodpressure"
+                    src="assets/Bloodpressure.png"
+                />
+                <img
+                    class="herometrics"
+                    id="anomaly"
+                    src="assets/Anomaly.png"
+                />
+                <img
+                    class="herometrics"
+                    id="heartrate"
+                    src="assets/Heartrate.png"
+                />
+                <div class="gradient"></div>
+                <div class="bottomnav">
+                    <!-- left spaced thingies -->
+                    <div>
+                        <div class="navboxwhite" id="scrolldownbtn">
+                            <img src="assets/downbtn.svg" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="rightassets">
-            <img id="herobgart" src="./assets/DAsset.png">
-            <img id="iphone" src="assets/iPhone.png">
-            <img class="herometrics" id="bloodpressure" src="assets/Bloodpressure.png">
-            <img class="herometrics" id="anomaly" src="assets/Anomaly.png">
-            <img class="herometrics" id="heartrate" src="assets/Heartrate.png">
-            <div class="gradient"></div>
+
+        <div class="missionwrapper">
+            <div class="missioncolorbox">
+                <div id="missionboxmargins">
+                    <div class="missionelem" id="missionelem1">
+                        <div id="shieldbox">
+                            <img src="./assets/Whiteshield.png" alt="" />
+                        </div>
+                        <h3>Personalized</h3>
+                    </div>
+                    <div class="missionelem" id="missionelem2"></div>
+                    <div class="missionelem" id="missionelem3">
+                        <img src="assets/Logowhite.png" alt="logo" />
+                        <h3>Healthcare</h3>
+                        <img src="assets/Logowhite.png" alt="logo" />
+                    </div>
+                    <div class="missionelem" id="missionelem4">
+                        <div id="missiontextdivdes">
+                            <h1>Artificial Intellience</h1>
+                        </div>
+                    </div>
+                    <div class="missionelem" id="missionelem5">
+                        <h1>Machine Learning</h1>
+                    </div>
+                    <div id="missiontextdiv">
+                        <div id="missiontextdivl">
+                            <h2>
+                                We create better health experience through AI/ML
+                                technology.
+                            </h2>
+                        </div>
+                        <div id="missiontextdivr">
+                            <p>
+                                We leverage AI and machine learning to create an
+                                accessible health experience for everyone on
+                                planet earth.
+                            </p>
+                            <button id="learnmorebtn">
+                                <h3 id="learnmorebtntxt">Learn More</h3>
+                                <img src="assets/Moreicon.png" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
-    <div class="missionwrapper">
-        <div class="missioncolorbox">
-
+        <!-- testimonials -->
+        <div id="teswrapper">
+            <div id="tescolorbox"></div>
         </div>
-    </div>
-    
-</body>
+
+        <!-- Services -->
+        <div id="serviceswrapper">
+            <button>OUR SERVICES</button>
+            <h1>Who We Serve</h1>
+            <div id="servicegrid">
+                <div class="servgridbox">
+                    <div class="servgridboxl">
+                        <div class="servgridboxicon">
+                            <img src="./assets/Solidheadhealth.png" />
+                        </div>
+                        <h1 class="servgridboxf">Patients</h1>
+                        <p class="servgridboxp">
+                            At Asklepios, we empower patients with personalized
+                            healthcare solutions, helping them make informed
+                            choices.
+                        </p>
+                    </div>
+                    <div class="servgridboxr"><img src="./assets/Rightarrow.png"></div>
+                </div>
+                <div class="servgridbox">
+                    <div class="servgridboxl">
+                        <div class="servgridboxicon">
+                            <img src="./assets/Solidperscription.png" />
+                        </div>
+                        <h1 class="servgridboxf">Providers</h1>
+                        <p class="servgridboxp">
+                            Asklepios supports healthcare providers with advanced tools and insights to streamline patient interactions.
+                        </p>
+                    </div>
+                    <div class="servgridboxr"><img src="./assets/Rightarrow.png"></div>
+                </div>
+                <div class="servgridbox">
+                    <div class="servgridboxl">
+                        <div class="servgridboxicon">
+                            <img src="./assets/Solidstethoscope.png" />
+                        </div>
+                        <h1 class="servgridboxf">Professionals</h1>
+                        <p class="servgridboxp">
+                            We offer healthcare professionals access to cutting-edge AI-driven health assessments and data analytics.
+                        </p>
+                    </div>
+                    <div class="servgridboxr"><img src="./assets/Rightarrow.png"></div>
+                </div>
+                <div class="servgridbox">
+                    <div class="servgridboxl">
+                        <div class="servgridboxicon">
+                            <img src="./assets/Solidperscription(1).png" />
+                        </div>
+                        <h1 class="servgridboxf">Patients</h1>
+                        <p class="servgridboxp">
+                            At Asklepios, we empower patients with personalized
+                            healthcare solutions, helping them make informed
+                            choices.
+                        </p>
+                    </div>
+                    <div class="servgridboxr"><img src="./assets/Rightarrow.png"></div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
