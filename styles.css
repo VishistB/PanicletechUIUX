@@ -606,6 +606,7 @@ body{
     margin: 2% auto 5% auto;
 }
 #commitmentheader{
+    display: flex;
     margin: 5% 0 2% 0;
 }
 
@@ -673,3 +674,79 @@ body{
 #ctabtntxt{
     margin-right: 20px;
 }
+#ctaaction{
+    display: flex;
+    margin-bottom: 10%;
+}
+
+/* footer */
+#footwrapper{
+    background: #F2F5F9;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 110vh;
+    width: 100%;
+    display: flex;
+}
+#footinnerwrapper{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #242E49;
+    margin:2% auto;
+    width: 98%;
+    border-radius: 24px;
+}
+#footoverlay{
+    width: 100%;
+    height: 100%;
+    background: url(./assets/Logo\ Mark.png);
+    background-position: 250px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footernav{
+    display: flex;
+}
+#footerpara{
+    color: white;
+    font-size: 2rem;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.footernav a{
+    width: 100%;
+    color: #BEC5D2;
+    font-size: 1.6rem;
+    /* margin: 0% 1%; */
+    margin-right: 8%;
+    text-align: center;
+}
+.footersocials{
+    display: flex;
+    margin: 8% 0;
+}
+.footersocials a{
+    margin: 5%;
+}
+#newnavbox{
+    background: #0f67fe;
+    margin-bottom: 2%;
+    /* margin-top: 1%; */
+}
+/* common */
+.blip{
+    background: #A6CBFF;
+    width: 8px;
+    height: 8px;
+    margin: auto 2% auto 0;
+}
+#blip1{
+    color: #0F67FE;
+}
+
+
