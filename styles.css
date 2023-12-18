@@ -64,6 +64,13 @@ body{
     border: solid black;
     width: 64px;
     height: 64px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+#scrolldownbtn:hover{
+    background: #A6CBFF;
+    width: 66px;
+    height: 66px;
 }
 .navboxmenu{
     background: #0F67FE;
@@ -163,20 +170,25 @@ body{
     right: 100px;
     bottom: 100px;
     z-index: 2;
+    transition: all 0.5s;
 }
 #heartrate{
     position: absolute;
     right: 100px;
     bottom: 400px;
     z-index: 2;
+    transition: all 0.5s;
 }
 #bloodpressure{
     position: absolute;
     right: 560px;
     bottom: 80px;
     z-index: 2;
+    transition: all 0.5s;
 }
-
+#bloodpressure:hover,#heartrate:hover,#anomaly:hover{
+    scale: 1.1;
+}
 /* MISSION WRAPPER */
 
 .missionwrapper{
@@ -233,11 +245,16 @@ body{
     
 }
 #missionelem2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 1%;
     background: #3D4966;
     width: 70%;
     font-size: 1.8rem;
+    color: white;
 }
+
 #missionelem3{
     margin-top: 1%;
     background: #0F67FE;
@@ -322,12 +339,29 @@ body{
 #tescolorbox{
     background: #D0E4FF;
     width: 95%;
-    min-height: 20vh;
+    height: 35vh;
     border-radius: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1% 0;
+    margin: 1% 0 0 0;
+}
+#lefttesoverlay{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 10%;
+    /* height:100%; */
+    /* background: url(./assets/Test.png); */
+    /* background-repeat: no-repeat; */
+}
+#righttesoverlay{
+    width: 50%;
+    height:100%;
+    background: url(./assets/Test.png);
+    background-repeat: no-repeat;
+    background-position: 100px;
 }
 
 /* Services */
@@ -442,6 +476,7 @@ body{
     width: 1000px;
     margin: 2% 0;
 }
+
 .featuresrowl{
     width: 50%;
 }
@@ -749,4 +784,59 @@ body{
     color: #0F67FE;
 }
 
-
+/* @media (max-width:1380px){
+    #missionelem1{
+        width: 100%;
+    }
+    .featuresbtn{
+        max-width: 60%;
+    }
+    #missionelem2{
+        display: none;
+    }
+    #tescolorbox{
+        flex-direction: column;
+    }
+    .navboxwhite{
+        display: none;
+    }
+    .herowrapper{
+        min-height: 190vh;
+    }
+    .assetsframe{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 15%;
+    }
+    .featuresrow{
+        flex-direction: column;
+        width: 98%;
+    }
+    .featuresrowr,.featuresrowl img{
+        scale: 0.5;
+    }
+    .footernav a{
+        display: none;
+    }
+    #herobgart{
+        display: none;
+    }
+    #herotextanddownload{
+        margin: 0 auto;
+    }
+    #iphone{
+        right: 20%;
+    }
+    #anomaly{
+        
+    }
+    #heartrate{
+        position: absolute;
+        right: 70px;
+        
+        scale:0.8;
+    }
+    #bloodpressure{
+        scale:0.8;
+    }
+} */
